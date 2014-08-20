@@ -1,0 +1,12 @@
+name             'chef-odi-base'
+maintainer       'The Open Data Institute'
+maintainer_email 'tech@theodi.org'
+license          'MIT'
+description      'Installs/Configures chef-odi-base'
+long_description 'Installs/Configures chef-odi-base'
+version          '0.1.0'
+
+depends 'chef-client'
+depends 'git'
+depends 'odi-monitoring'
+depends 'envbuilder'

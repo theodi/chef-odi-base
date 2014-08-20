@@ -1,0 +1,30 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  client_rb:
+    environment: production
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+    - recipe[chef-odi-base::default]
+    data_bags_path: test/data_bags
+    attributes:
+      chef_client:
+        splay: 250
+        cron:
+          use_cron_d: true
+          hour:       '*'
+          minute:     '*/5'
+          log_file:   /var/log/chef/cron.log
+#      envbuilder:
+#        base_dbi: production
+#        base_dir: /home/env
+#        owner:    env
+#        group:    env
