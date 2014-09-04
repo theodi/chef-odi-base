@@ -32,4 +32,5 @@ include_recipe 'chef-client::cron'
 include_recipe 'odi-monitoring'
 
 include_recipe 'git'
+include_recipe 'odi-pk'
 include_recipe 'envbuilder'
