@@ -16,13 +16,13 @@ suites:
     - recipe[odi-base::default]
     data_bags_path: test/data_bags
     attributes:
-      chef_client:
-        splay: 250
-        cron:
-          use_cron_d: true
-          hour:       '*'
-          minute:     '*/5'
-          log_file:   /var/log/chef/cron.log
+#      chef_client:
+#        splay: 250
+#        cron:
+#          use_cron_d: true
+#          hour:       '*'
+##          minute:     '*/5'
+  #        log_file:   /var/log/chef/cron.log
 #      envbuilder:
 #        base_dbi: production
 #        base_dir: /home/env
