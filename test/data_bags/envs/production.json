@@ -1,6 +1,7 @@
 {
   "id": "production",
   "content" : {
-    "such": "test"
+    "corn": "snake",
+    "bag": "prod"
   }
 }
