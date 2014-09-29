@@ -4,7 +4,7 @@ maintainer_email 'tech@theodi.org'
 license          'MIT'
 description      'Installs/Configures chef-odi-base'
 long_description 'Installs/Configures chef-odi-base'
-version          '0.1.4'
+version          '0.1.5'
 
 depends 'odi-apt'
 depends 'chef-client'
